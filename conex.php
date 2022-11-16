@@ -10,7 +10,7 @@ class Database
     private static $conn = null;
 
     public static function connect()
-    {
+    {   
         try {
     self::$conn = new PDO("mysql:host=" .self::$servername .";dbname=". self::$db , self::$username, self::$password);
         // set the PDO error mode to exception
